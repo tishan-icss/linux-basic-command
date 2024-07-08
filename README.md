@@ -1,7 +1,7 @@
 # Some basic linux commands
-#Linux Cheat Sheet
 
-##File Commands:
+
+## File Commands:
  * ls – directory listing
  * ls -al – formatted listing with hidden files
  * cd dir - change directory to dir
@@ -23,7 +23,7 @@
  * tail file – output the last 10 lines of file
  * tail -f file – output the contents of file as it grows, starting with the last 10 lines 
 
-##Process Management:
+## Process Management:
  * ps – display your currently active processes
  * top – display all running processes
  * kill pid – kill process id pid
@@ -32,28 +32,28 @@
  * fg – brings the most recent job to foreground
  * fg n – brings job n to the foreground
 
-##File Permissions:
+## File Permissions:
  * chmod octal file – change the permissions of file to octal, which can be found separately for user, group, and world by adding:
  * 4 – read (r)
  * 2 – write (w)
  * 1 – execute (x)
 
-###Examples:
+### Examples:
  * chmod 777 – read, write, execute for all
  * chmod 755 – rwx for owner, rx for group and world
 
-##SSH: 
+## SSH: 
  * ssh user@host – connect to host as user
  * ssh -p port user@host – connect to host on port port as user
  * ssh-copy-id user@host – add your key to host for user to enable a keyed or passwordless login
 
-##Searching:
+## Searching:
  * grep pattern files – search for pattern in files
  * grep -r pattern dir – search recursively for pattern in dir
  * command | grep pattern – search for pattern in the output of command
  * locate file – find all instances of file
  
-##System Info:
+## System Info:
  * date – show the current date and time
  * cal – show this month's calendar
  * uptime – show current uptime
@@ -70,7 +70,7 @@
  * whereis app – show possible locations of app
  * which app – show which app will be run by default
 
-##Compression:
+## Compression:
  * tar cf file.tar files – create a tar named file.tar containing files
  * tar xf file.tar – extract the files from file.tar
  * tar czf file.tar.gz files – create a tar with Gzip compression
@@ -80,7 +80,7 @@
  * gzip file – compresses file and renames it to file.gz
  * gzip -d file.gz – decompresses file.gz back to file
 
-##Network:
+## Network:
  * ping host – ping host and output results
  * whois domain – get whois information for domain
  * dig domain – get DNS information for domain
@@ -88,22 +88,12 @@
  * wget file – download file
  * wget -c file – continue a stopped download
 
-##Installation:
+## Installation:
  * dpkg -i pkg.deb – install a package (Debian)
  * rpm -Uvh pkg.rpm – install a package (RPM)
 
-##Install from source:
+## Install from source:
  * ./configure
  * make
  * make install
 
-##Shortcuts:
- * Ctrl+C – halts the current command
- * Ctrl+Z – stops the current command, resume with
- * fg in the foreground or bg in the background
- * Ctrl+D – log out of current session, similar to exit
- * Ctrl+W – erases one word in the current line
- * Ctrl+U – erases the whole line
- * Ctrl+R – type to bring up a recent command
- * !! - repeats the last command
- * exit – log out of current session
